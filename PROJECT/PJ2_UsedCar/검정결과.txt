@@ -1,0 +1,32 @@
+# Location / Fuel_type
+카이제곱 통계량:  191.75943332361
+p-값:  8.413365028011642e-36
+
+디젤 순위
+Hyderabad > Coimbatore > Delhi > Kochi > Mumbai > Pune > Chennai > Kolkata > Jaipur > Bangalore >Ahmedabad
+
+Others
+Mumbai > Kochi > Pune > Kolkata > Coimbatore > Delhi > Hyderabad > Chennai > Jaipur > Bangalore > Ahmedabad
+
+
+# Location / Transmission
+카이제곱 통계량:  217.9427413272588
+p-값:  2.880450358329784e-41
+
+Automatic
+Hyderabad > Mumbai > Kochi = Kolkata = Pune > Coimbatore > Delhi > Chennai > Jaipur > Bangalore> Ahmedabad
+
+Manual
+Mumbai > Coimbatore > Kochi > Hyderabad > Delhi > Bangalore > Pune > Chennai > Kolkata > Ahmedabad >Jaipur
+
+# Location/ Owner_Type
+카이제곱 통계량:  417.265264045144
+p-값:  1.984646416818297e-83
+
+
+First
+Mumbai > Hyderabad > Kochi > Coimbatore > Kolkata > Delhi > Pune > Chennai > Jaipur > Bangalore > Ahmedabad
+
+Other
+Pune > Chennai > Bangalore >Mumbai > Jaipur > Delhi > Hyderabad > Coimbatore > Ahmedabad > Kochi >  Kolkata
+
