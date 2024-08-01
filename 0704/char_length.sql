@@ -1,0 +1,1 @@
+select char_length('investment_avenues'), length('investment_Avenues'), char_length('안녕하세요'),length('안녕하세요');

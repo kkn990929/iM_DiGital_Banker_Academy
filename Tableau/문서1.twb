@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='netflix_titles_cast(netflix_titles)' inline='true' name='federated.0ixfdzk1762qrl11b6z6u0y22gpy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='excel-direct.1j8p9r705z5p921d6dehb0h1z5ap'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/campus4D037/iM DiGital Bank/Tableau/netflix_titles.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1j8p9r705z5p921d6dehb0h1z5ap' name='netflix_titles' table='[netflix_titles$]' type='table'>
+          <columns gridOrigin='A1:I6237:no:A1:I6237:0' header='yes' outcome='2'>
+            <column datatype='string' name='duration_minutes' ordinal='0' />
+            <column datatype='string' name='duration_seasons' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='date_added' ordinal='4' />
+            <column datatype='integer' name='release_year' ordinal='5' />
+            <column datatype='string' name='rating' ordinal='6' />
+            <column datatype='string' name='description' ordinal='7' />
+            <column datatype='integer' name='show_id' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1j8p9r705z5p921d6dehb0h1z5ap' name='netflix_titles' table='[netflix_titles$]' type='table'>
+          <columns gridOrigin='A1:I6237:no:A1:I6237:0' header='yes' outcome='2'>
+            <column datatype='string' name='duration_minutes' ordinal='0' />
+            <column datatype='string' name='duration_seasons' ordinal='1' />
+            <column datatype='string' name='type' ordinal='2' />
+            <column datatype='string' name='title' ordinal='3' />
+            <column datatype='date' name='date_added' ordinal='4' />
+            <column datatype='integer' name='release_year' ordinal='5' />
+            <column datatype='string' name='rating' ordinal='6' />
+            <column datatype='string' name='description' ordinal='7' />
+            <column datatype='integer' name='show_id' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I6237:no:A1:I6237:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_minutes</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[duration_minutes]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>duration_minutes</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration_seasons</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[duration_seasons]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>duration_seasons</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_titles]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='netflix_titles' datatype='table' name='[__tableau_internal_object_id__].[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]' role='measure' type='quantitative' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Duration Minutes' datatype='string' name='[duration_minutes]' role='dimension' type='nominal' />
+      <column caption='Duration Seasons' datatype='string' name='[duration_seasons]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/CAMPUS~1/AppData/Local/Temp/TableauTemp/#TableauTemp_0rhsa740q33tds1h8t8mx1bj4gbe.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/31/2024 06:19:38 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>duration_minutes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[duration_minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration_minutes</remote-alias>
+              <ordinal>0</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>184</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>duration_seasons</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[duration_seasons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>duration_seasons</remote-alias>
+              <ordinal>1</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>3</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6017</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_added</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_added</remote-alias>
+              <ordinal>4</ordinal>
+              <family>netflix_titles</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>928</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>netflix_titles</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>6</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>7</ordinal>
+              <family>netflix_titles</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6236</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>show_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[show_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>show_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>netflix_titles</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6236</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='200' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='netflix_titles' id='netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5'>
+            <properties context=''>
+              <relation connection='excel-direct.1j8p9r705z5p921d6dehb0h1z5ap' name='netflix_titles' table='[netflix_titles$]' type='table'>
+                <columns gridOrigin='A1:I6237:no:A1:I6237:0' header='yes' outcome='2'>
+                  <column datatype='string' name='duration_minutes' ordinal='0' />
+                  <column datatype='string' name='duration_seasons' ordinal='1' />
+                  <column datatype='string' name='type' ordinal='2' />
+                  <column datatype='string' name='title' ordinal='3' />
+                  <column datatype='date' name='date_added' ordinal='4' />
+                  <column datatype='integer' name='release_year' ordinal='5' />
+                  <column datatype='string' name='rating' ordinal='6' />
+                  <column datatype='string' name='description' ordinal='7' />
+                  <column datatype='integer' name='show_id' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles_cast(netflix_titles)' name='federated.0ixfdzk1762qrl11b6z6u0y22gpy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ixfdzk1762qrl11b6z6u0y22gpy'>
+            <_.fcp.ObjectModelTableType.false...column caption='netflix_titles' datatype='integer' name='[__tableau_internal_object_id__].[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='netflix_titles' datatype='table' name='[__tableau_internal_object_id__].[netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5]' role='measure' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[date_added]' derivation='Year-Trunc' name='[tyr:date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[tyr:date_added:ok]</rows>
+        <cols>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[__tableau_internal_object_id__].[cnt:netflix!titles_D4240B66F98C499FBD9E5C95616B9AE5:qk]</cols>
+      </table>
+      <simple-id uuid='{B2EAC123-C2DF-4261-93BD-5DF48CF2F3E3}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='title' />
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[:Measure Names]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[__tableau_internal_object_id__].[cnt:netflix!titles_0FC162E0FEAA46D08D5992700EC93A88:qk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:duration_seasons:nk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:rating:nk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:release_year:qk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:show_id:ok]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:title:nk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[none:type:nk]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[tyr:date_added:ok]</field>
+            <field>[federated.0ixfdzk1762qrl11b6z6u0y22gpy].[yr:date_added:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C018FEC3-A594-4F19-B864-5DC8E588181B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
