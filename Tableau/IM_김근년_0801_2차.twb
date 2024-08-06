@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='IM__0801_2_17224896758960' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='유니온(데이터연결실습)' inline='true' name='federated.15e53490fj6nq21e7vwl40jc5lm0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='데이터연결실습' name='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='C:/Users/campus4D037/iM DiGital Bank/Tableau/데이터연결실습.xlsx' interpretationMode='1' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='피벗' type='pivot'>
+          <columns>
+            <column datatype='string' name='피벗 필드명' />
+            <column datatype='integer' name='피벗 필드 값' />
+          </columns>
+          <tag name='피벗 필드명'>
+            <value name='[1분기]' />
+            <value name='[2분기]' />
+            <value name='[3분기]' />
+            <value name='[4분기]' />
+          </tag>
+          <groups>
+            <group name='피벗 필드 값'>
+              <field name='[유니온].[1분기]' />
+              <field name='[유니온].[2분기]' />
+              <field name='[유니온].[3분기]' />
+              <field name='[유니온].[4분기]' />
+            </group>
+          </groups>
+          <relation all='true' name='유니온' type='union'>
+            <columns>
+              <column datatype='string' name='실적' />
+              <column datatype='integer' name='1분기' />
+              <column datatype='integer' name='2분기' />
+              <column datatype='integer' name='3분기' />
+              <column datatype='integer' name='4분기' />
+              <column datatype='integer' name='2021년' />
+              <column datatype='integer' name='2022년' />
+              <column datatype='integer' name='2023년' />
+              <column datatype='integer' name='2024년' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B2:G6' table='[연별 실적 집계$B02:G06]' type='table'>
+              <columns gridOrigin='B2:G6:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2021년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B8:G12' table='[연별 실적 집계$B08:G12]' type='table'>
+              <columns gridOrigin='B8:G12:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2022년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B14:G18' table='[연별 실적 집계$B14:G18]' type='table'>
+              <columns gridOrigin='B14:G18:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2023년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B20:G24' table='[연별 실적 집계$B20:G24]' type='table'>
+              <columns gridOrigin='B20:G24:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2024년' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='피벗' type='pivot'>
+          <columns>
+            <column datatype='string' name='피벗 필드명' />
+            <column datatype='integer' name='피벗 필드 값' />
+          </columns>
+          <tag name='피벗 필드명'>
+            <value name='[1분기]' />
+            <value name='[2분기]' />
+            <value name='[3분기]' />
+            <value name='[4분기]' />
+          </tag>
+          <groups>
+            <group name='피벗 필드 값'>
+              <field name='[유니온].[1분기]' />
+              <field name='[유니온].[2분기]' />
+              <field name='[유니온].[3분기]' />
+              <field name='[유니온].[4분기]' />
+            </group>
+          </groups>
+          <relation all='true' name='유니온' type='union'>
+            <columns>
+              <column datatype='string' name='실적' />
+              <column datatype='integer' name='1분기' />
+              <column datatype='integer' name='2분기' />
+              <column datatype='integer' name='3분기' />
+              <column datatype='integer' name='4분기' />
+              <column datatype='integer' name='2021년' />
+              <column datatype='integer' name='2022년' />
+              <column datatype='integer' name='2023년' />
+              <column datatype='integer' name='2024년' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B2:G6' table='[연별 실적 집계$B02:G06]' type='table'>
+              <columns gridOrigin='B2:G6:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2021년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B8:G12' table='[연별 실적 집계$B08:G12]' type='table'>
+              <columns gridOrigin='B8:G12:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2022년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B14:G18' table='[연별 실적 집계$B14:G18]' type='table'>
+              <columns gridOrigin='B14:G18:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2023년' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B20:G24' table='[연별 실적 집계$B20:G24]' type='table'>
+              <columns gridOrigin='B20:G24:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                <column datatype='string' name='실적' ordinal='0' />
+                <column datatype='integer' name='1분기' ordinal='1' />
+                <column datatype='integer' name='2분기' ordinal='2' />
+                <column datatype='integer' name='3분기' ordinal='3' />
+                <column datatype='integer' name='4분기' ordinal='4' />
+                <column datatype='integer' name='2024년' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>실적</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[실적]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>실적</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021년</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021년]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>2021년</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2022년</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2022년]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>2022년</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2023년</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2023년]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>2023년</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2024년</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2024년]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>2024년</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[유니온]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LKO_RKR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드명</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[피벗 필드명]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드명</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>피벗 필드 값</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[피벗 필드 값]</local-name>
+            <parent-name>[피벗]</parent-name>
+            <remote-alias>피벗 필드 값</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[2021년]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[2022년]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[2023년]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[2024년]' role='measure' type='quantitative' />
+      <column caption='연도' datatype='string' name='[Calculation_1604688888150429704]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='SPLIT([실적],&apos;-&apos;,1)' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='유니온' datatype='table' name='[__tableau_internal_object_id__].[_557C0C66483640F382D54796D8BC069F]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='실적 - 분할 1' datatype='integer' name='[실적 - 분할 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.15e53490fj6nq21e7vwl40jc5lm0].[실적]'>
+        <calculation class='tableau' formula='INT( SPLIT( [실적], &quot;-&quot;, 1 ) )' />
+      </column>
+      <column caption='실적 - 분할 2' datatype='string' name='[실적 - 분할 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.15e53490fj6nq21e7vwl40jc5lm0].[실적]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [실적], &quot;-&quot;, 2 ) )' />
+      </column>
+      <column caption='분기별 값' datatype='integer' name='[피벗 필드 값]' role='measure' type='quantitative' />
+      <column caption='분기' datatype='string' name='[피벗 필드명]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/CAMPUS~1/AppData/Local/Temp/TableauTemp/#TableauTemp_14pqj9s1wkbg8x10tg1331bqj7dv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/01/2024 05:41:45 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>실적</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[실적]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>실적</remote-alias>
+              <ordinal>0</ordinal>
+              <family>유니온</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sheet</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sheet]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sheet</remote-alias>
+              <ordinal>1</ordinal>
+              <family>유니온</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>유니온</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>피벗 필드명</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[피벗 필드명]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>피벗 필드명</remote-alias>
+              <ordinal>3</ordinal>
+              <family>피벗</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>피벗 필드 값</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[피벗 필드 값]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>피벗 필드 값</remote-alias>
+              <ordinal>4</ordinal>
+              <family>피벗</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_557C0C66483640F382D54796D8BC069F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='실적' />
+        <field-sort-custom-order field='Calculation_1604688888150429704' />
+        <field-sort-custom-order field='1분기' />
+        <field-sort-custom-order field='Calculation_1604688888151982089' />
+        <field-sort-custom-order field='2분기' />
+        <field-sort-custom-order field='3분기' />
+        <field-sort-custom-order field='4분기' />
+        <field-sort-custom-order field='2021년' />
+        <field-sort-custom-order field='2022년' />
+        <field-sort-custom-order field='2023년' />
+        <field-sort-custom-order field='2024년' />
+        <field-sort-custom-order field='Sheet' />
+        <field-sort-custom-order field='Table Name' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='유니온' id='_557C0C66483640F382D54796D8BC069F'>
+            <properties context=''>
+              <relation name='피벗' type='pivot'>
+                <columns>
+                  <column datatype='string' name='피벗 필드명' />
+                  <column datatype='integer' name='피벗 필드 값' />
+                </columns>
+                <tag name='피벗 필드명'>
+                  <value name='[1분기]' />
+                  <value name='[2분기]' />
+                  <value name='[3분기]' />
+                  <value name='[4분기]' />
+                </tag>
+                <groups>
+                  <group name='피벗 필드 값'>
+                    <field name='[유니온].[1분기]' />
+                    <field name='[유니온].[2분기]' />
+                    <field name='[유니온].[3분기]' />
+                    <field name='[유니온].[4분기]' />
+                  </group>
+                </groups>
+                <relation all='true' name='유니온' type='union'>
+                  <columns>
+                    <column datatype='string' name='실적' />
+                    <column datatype='integer' name='1분기' />
+                    <column datatype='integer' name='2분기' />
+                    <column datatype='integer' name='3분기' />
+                    <column datatype='integer' name='4분기' />
+                    <column datatype='integer' name='2021년' />
+                    <column datatype='integer' name='2022년' />
+                    <column datatype='integer' name='2023년' />
+                    <column datatype='integer' name='2024년' />
+                    <column datatype='string' name='Sheet' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B2:G6' table='[연별 실적 집계$B02:G06]' type='table'>
+                    <columns gridOrigin='B2:G6:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                      <column datatype='string' name='실적' ordinal='0' />
+                      <column datatype='integer' name='1분기' ordinal='1' />
+                      <column datatype='integer' name='2분기' ordinal='2' />
+                      <column datatype='integer' name='3분기' ordinal='3' />
+                      <column datatype='integer' name='4분기' ordinal='4' />
+                      <column datatype='integer' name='2021년' ordinal='5' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B8:G12' table='[연별 실적 집계$B08:G12]' type='table'>
+                    <columns gridOrigin='B8:G12:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                      <column datatype='string' name='실적' ordinal='0' />
+                      <column datatype='integer' name='1분기' ordinal='1' />
+                      <column datatype='integer' name='2분기' ordinal='2' />
+                      <column datatype='integer' name='3분기' ordinal='3' />
+                      <column datatype='integer' name='4분기' ordinal='4' />
+                      <column datatype='integer' name='2022년' ordinal='5' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B14:G18' table='[연별 실적 집계$B14:G18]' type='table'>
+                    <columns gridOrigin='B14:G18:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                      <column datatype='string' name='실적' ordinal='0' />
+                      <column datatype='integer' name='1분기' ordinal='1' />
+                      <column datatype='integer' name='2분기' ordinal='2' />
+                      <column datatype='integer' name='3분기' ordinal='3' />
+                      <column datatype='integer' name='4분기' ordinal='4' />
+                      <column datatype='integer' name='2023년' ordinal='5' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.1w0v8ou0r0clv619po9h90j7dy4a' name='연별 실적 집계 B20:G24' table='[연별 실적 집계$B20:G24]' type='table'>
+                    <columns gridOrigin='B20:G24:no:B2:G24:2' lost='0' outcome='1' processed='15'>
+                      <column datatype='string' name='실적' ordinal='0' />
+                      <column datatype='integer' name='1분기' ordinal='1' />
+                      <column datatype='integer' name='2분기' ordinal='2' />
+                      <column datatype='integer' name='3분기' ordinal='3' />
+                      <column datatype='integer' name='4분기' ordinal='4' />
+                      <column datatype='integer' name='2024년' ordinal='5' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='연별실적집계'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='유니온(데이터연결실습)' name='federated.15e53490fj6nq21e7vwl40jc5lm0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15e53490fj6nq21e7vwl40jc5lm0'>
+            <column caption='연도' datatype='string' name='[Calculation_1604688888150429704]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='SPLIT([실적],&apos;-&apos;,1)' />
+            </column>
+            <column-instance column='[Calculation_1604688888150429704]' derivation='None' name='[none:Calculation_1604688888150429704:nk]' pivot='key' type='nominal' />
+            <column-instance column='[실적 - 분할 2]' derivation='None' name='[none:실적 - 분할 2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[피벗 필드명]' derivation='None' name='[none:피벗 필드명:nk]' pivot='key' type='nominal' />
+            <column-instance column='[피벗 필드 값]' derivation='Sum' name='[sum:피벗 필드 값:qk]' pivot='key' type='quantitative' />
+            <column caption='실적 - 분할 2' datatype='string' name='[실적 - 분할 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.15e53490fj6nq21e7vwl40jc5lm0].[실적]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [실적], &quot;-&quot;, 2 ) )' />
+            </column>
+            <column datatype='string' name='[실적]' role='dimension' type='nominal' />
+            <column caption='분기별 값' datatype='integer' name='[피벗 필드 값]' role='measure' type='quantitative' />
+            <column caption='분기' datatype='string' name='[피벗 필드명]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15e53490fj6nq21e7vwl40jc5lm0].[sum:피벗 필드 값:qk]' field-type='quantitative' range-type='independent' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>([federated.15e53490fj6nq21e7vwl40jc5lm0].[none:실적 - 분할 2:nk] * [federated.15e53490fj6nq21e7vwl40jc5lm0].[sum:피벗 필드 값:qk])</rows>
+        <cols>([federated.15e53490fj6nq21e7vwl40jc5lm0].[none:Calculation_1604688888150429704:nk] / [federated.15e53490fj6nq21e7vwl40jc5lm0].[none:피벗 필드명:nk])</cols>
+      </table>
+      <simple-id uuid='{5ED890AC-D3EF-42CE-9A58-E3F51C5CDF56}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='연별실적집계'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[:Measure Names]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:2021년:qk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:Calculation_1604688888150429704:nk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:Sheet:nk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:Table Name:nk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:실적 - 분할 1:ok]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:실적 - 분할 2:nk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:실적:nk]</field>
+            <field>[federated.15e53490fj6nq21e7vwl40jc5lm0].[none:피벗 필드명:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E144A330-91C0-4A6F-AC16-D56F25848097}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='연별실적집계' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
