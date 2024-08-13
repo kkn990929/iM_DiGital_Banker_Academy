@@ -1,0 +1,5 @@
+GradientBoostingRegressor - Train Score : 0.20558092209649326  Test Score : -0.012912508768127218
+
+
+Gradient Boosting Model MSE: 8897300.19790055
+Gradient Boosting Model R^2 Score: -0.012912508768127218
