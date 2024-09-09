@@ -1,0 +1,21 @@
+https://dacon.io/competitions/official/235736/data
+
+
+[데이터]
+
+1. train.csv (122400, 10)
+
+train 데이터 : 60개 건물들의 2020년 6월 1일 부터 2020년 8월 24일까지의 데이터
+1시간 단위로 제공
+전력사용량(kWh) 포함
+
+
+2. test.csv (10080, 9)
+
+test 데이터 : 60개 건물들의 2020년 8월 25일 부터 2020년 8월 31일까지의 데이터
+3시간 단위로 제공(강수량의 경우 6시간 단위로 제공, 예보데이터)
+전력사용량(kWh) 미포함
+
+3. sample_submission.csv (10080, 2)
+
+sample_submission 데이터 
