@@ -1,0 +1,43 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul  3 10:38:26 2024
+
+@author: campus4D037
+"""
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+# 베르누이 분포(data = 0 or 1)의 모평균 구간추정 (점추정) 
+# 점 추정은 미지의 분포에 대하여 가장 근사한 단일 값을 구하는 것 
+
+# en_f = pd.read_csv('enquete.csv')
+
+# en_df = np.array(en_f['known'])
+
+# 점추정
+# ex) 상품의 인지도 , 지지율, 흡연율
+
+# s_mean = en_df.mean() # 0.709 70.9%의 상품의 인지도 확인
+
+
+
+
+
+# 포아송 분포를 통한 모평균의 신뢰구간 추정
+# 모집단의 정규분포를 가정하기 어려운 경우
+
+
+en_f = pd.read_csv('access.csv')
+en_df = np.array(en_f['access number'])
+n = len(en_df)
+s_mean = en_df.mean() # 10.4444  
+
+
+
+# 신뢰구간의 정보
+rv = stats.norm()
+lcl = s_mean - rv.isf(0.025) * np.sqrt(s_mean/n) # 9.697953549598202
+ucl = s_mean - rv.isf(0.975) * np.sqrt(s_mean/n) # 11.190935339290688
+
+print(lcl, ucl)
